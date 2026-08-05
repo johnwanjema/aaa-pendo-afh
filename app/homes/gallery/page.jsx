@@ -1,10 +1,19 @@
 "use client";
 
+import { Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 
 export default function GalleryPage() {
+  return (
+    <Suspense fallback={null}>
+      <GalleryContent />
+    </Suspense>
+  );
+}
+
+function GalleryContent() {
   const searchParams = useSearchParams();
   const home = searchParams.get("home");
 
@@ -33,10 +42,6 @@ export default function GalleryPage() {
         "/parking.jpeg",
         "/parking1.1.jpeg",
         "/sideview.jpeg",
-        
-
-
-      
       ],
     },
 
