@@ -1,0 +1,157 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Handles links on both homepage and other pages
+  const getHref = (href) => {
+    if (href === "/") return "/";
+    if (href === "/homes") return "/homes";
+
+    return pathname === "/" ? href : `/${href}`;
+  };
+
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Our Homes", href: "/homes" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "FAQ", href: "#faq" },
+    { name: "Contact", href: "#contact" },
+  ];
+
+  return (
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white shadow-md py-3" : "bg-white py-5"
+      }`}
+    >
+      <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2">
+          <div>
+            <h1 className="text-2xl font-bold text-[#4F6F52]">
+              Pendo AFH
+            </h1>
+            <p className="text-xs text-gray-500">
+              Compassionate Care Home
+            </p>
+          </div>
+        </Link>
+
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                href={getHref(link.href)}
+                className="
+                  text-[#252525]
+                  font-medium
+                  hover:text-[#4F6F52]
+                  transition
+                  duration-300
+                "
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* CTA Button */}
+        <div className="hidden lg:block">
+          <Link
+            href={getHref("#contact")}
+            className="
+              bg-[#C89B3C]
+              text-white
+              px-6
+              py-3
+              rounded-full
+              font-semibold
+              hover:bg-[#A67C2E]
+              transition
+              duration-300
+              shadow-sm
+            "
+          >
+            Schedule Tour
+          </Link>
+        </div>
+
+        {/* Mobile Button */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="lg:hidden text-[#4F6F52]"
+        >
+          {open ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+      </nav>
+
+      {/* Mobile Menu */}
+      {open && (
+        <div className="lg:hidden bg-white shadow-md">
+          <ul className="flex flex-col px-6 py-6 gap-5">
+
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  href={getHref(link.href)}
+                  onClick={() => setOpen(false)}
+                  className="
+                    text-[#252525]
+                    font-medium
+                    hover:text-[#4F6F52]
+                  "
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+
+            <li>
+              <Link
+                href={getHref("#contact")}
+                onClick={() => setOpen(false)}
+                className="
+                  inline-block
+                  bg-[#C89B3C]
+                  text-white
+                  px-6
+                  py-3
+                  rounded-full
+                  font-semibold
+                "
+              >
+                Schedule Tour
+              </Link>
+            </li>
+
+          </ul>
+        </div>
+      )}
+    </header>
+  );
+}
