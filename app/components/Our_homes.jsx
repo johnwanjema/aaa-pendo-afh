@@ -51,40 +51,27 @@ export default function OurHomes() {
             >
               <div className="relative h-80 overflow-hidden">
 
-                <Image
-                  src={home.image}
-                  alt={home.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition duration-500"
-                />
-
+                <Image src={home.image} alt={home.title} fill
+                  className="object-cover group-hover:scale-105 transition duration-500"/>
               </div>
 
               <div className="p-8">
-
                 <h3 className="text-2xl font-bold text-[#252525]">
                   {home.title}
                 </h3>
-
                 <p className="mt-4 text-gray-600 leading-7">
                   {home.description}
                 </p>
-
                 <Link
                   href={home.href}
-                  className="inline-flex items-center gap-2 mt-6 text-[#4F6F52] font-semibold hover:gap-3 transition-all"
-                >
+                  className="inline-flex items-center gap-2 mt-6 text-[#4F6F52] font-semibold hover:gap-3 transition-all">
                   Explore Home
                   <ArrowRight size={18} />
                 </Link>
-
               </div>
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

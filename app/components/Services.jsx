@@ -50,17 +50,17 @@ export default function Services() {
   return (
     <section
       id="services"
-      // className="py-16 bg-white"
-       className="relative overflow-hidden py-20"
+      className="py-16 bg-white"
+      //  className="relative overflow-hidden py-20"
     >
-      <div
+      {/* <div
   className="absolute inset-0 bg-cover bg-center"
   style={{ backgroundImage: "url('/lobby.jpeg')" }}
-/>
-<div className="absolute inset-0 bg-black/10" />
+// /> */}
+// <div className="absolute inset-0 bg-black/10" />
 
-      {/* <div className="max-w-6xl mx-auto px-6"> */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
+      {/* <div className="relative z-10 max-w-6xl mx-auto px-6"> */}
 
         {/* Header */}
 

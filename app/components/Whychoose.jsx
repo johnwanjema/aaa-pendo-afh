@@ -34,101 +34,53 @@ const reasons = [
 
 export default function WhyChoose() {
   return (
-    <section
-      id="why"
-      className="py-12 bg-[#F5F1E8]"
-    >
+    <section id="why" className="py-12 bg-[#F5F1E8]">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-8">
-
           <p className="uppercase tracking-[3px] text-[#4F6F52] font-semibold text-sm">
             Why Choose Pendo AFH
           </p>
-
           <h2 className="mt-3 text-3xl md:text-4xl font-bold text-[#252525]">
             Exceptional Care Begins
             <span className="block text-[#4F6F52]">
               With Genuine Compassion
             </span>
           </h2>
-
         </div>
 
 
         {/* Cards */}
         <div className="space-y-4">
+            {reasons.map((reason, index) => {
+              const Icon = reason.icon;
+              const left = index % 2 === 0;
 
-          {reasons.map((reason, index) => {
-            const Icon = reason.icon;
-            const left = index % 2 === 0;
+              return (
+                <div key={reason.title} className={`flex ${left ? "md:justify-start" : "md:justify-end"}`}>
+                  <div className="md:w-[48%]">
+                    <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F5F1E8]">
+                          <Icon className="text-[#4F6F52]" size={20} />
+                        </div>
 
-            return (
-              <div
-                key={reason.title}
-                className={`flex ${
-                  left ? "md:justify-start" : "md:justify-end"
-                }`}
-              >
-
-                <div className="md:w-[48%]">
-
-                  <div
-                    className="
-                    bg-white
-                    rounded-2xl
-                    p-5
-                    shadow-sm
-                    hover:shadow-lg
-                    transition-all
-                    duration-300
-                    hover:-translate-y-1
-                    "
-                  >
-
-                    <div className="flex items-center gap-3">
-
-                      <div
-                        className="
-                        w-10
-                        h-10
-                        rounded-full
-                        bg-[#F5F1E8]
-                        flex
-                        items-center
-                        justify-center
-                        "
-                      >
-                        <Icon
-                          className="text-[#4F6F52]"
-                          size={20}
-                        />
+                        <h3 className="text-lg font-semibold text-[#252525]">
+                          {reason.title}
+                        </h3>
                       </div>
 
-                      <h3 className="text-lg font-semibold text-[#252525]">
-                        {reason.title}
-                      </h3>
-
+                      <p className="mt-3 text-sm leading-6 text-gray-600">
+                        {reason.description}
+                      </p>
                     </div>
-
-
-                    <p className="mt-3 text-sm text-gray-600 leading-6">
-                      {reason.description}
-                    </p>
-
-
                   </div>
-
                 </div>
-
-              </div>
-            );
-          })}
-
-        </div>
-
-      </div>
-    </section>
+              );
+            })}
+          </div>
+       </div>
+   </section>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
@@ -7,6 +8,17 @@ import Navbar from "@/app/components/Navbar";
 export default function GalleryPage() {
   const searchParams = useSearchParams();
   const home = searchParams.get("home");
+  const [scrolled, setScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 80);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   const galleries = {
     "1": {
@@ -46,11 +58,19 @@ export default function GalleryPage() {
         "Explore the comfortable spaces and caring environment of Home Two.",
       images: [
         "/home2.jpeg",
-
         "/overview2.1.jpeg",
         "/lounge2.1.jpeg",
         "/living2.jpeg",
         "/dining2.jpeg",
+        "/bookshelf.jpeg",
+        "/bathroom2.jpeg",
+        "/bathroom2.1.jpeg",
+        "/bed2.jpeg",
+        "/driveway2.jpeg",
+        "/lobby2.jpeg",
+        "/lounge2.1.jpeg",
+        "/washroom2.1.jpeg",
+        "/washroom2.jpeg",
       ],
     },
   };
@@ -63,27 +83,31 @@ export default function GalleryPage() {
 
       <main className="bg-[#FFFBF5] min-h-screen">
 
-        {/* Page Header */}
-        <section className="pt-32 pb-16">
-          <div className="max-w-4xl mx-auto px-6 text-center">
+       
+        {/* Sticky Page Header */}
+          <section
+            className={`sticky top-20 z-40 border-b border-[#C89B3C]/20 bg-[#FFFBF5]/95 backdrop-blur-md transition-all duration-300 ${scrolled ? "py-3" : "py-8"}`}
+          >
+            <div className="mx-auto max-w-4xl px-6 text-center">
+              <p className={`uppercase font-semibold tracking-[4px] text-[#4F6F52] transition-all duration-300 ${
+                  scrolled ? "text-xs" : "text-sm"}`}>
+                Gallery
+              </p>
 
-            <p className="uppercase tracking-[4px] text-[#4F6F52] font-semibold text-sm">
-              Gallery
-            </p>
-
-            <h1 className="mt-4 text-4xl md:text-6xl font-bold text-[#252525]">
-              {gallery.title}
-            </h1>
-
-            <p className="mt-6 text-gray-600 leading-8 max-w-2xl mx-auto">
-              {gallery.description}
-            </p>
-
-          </div>
-        </section>
+              <h1 className={`font-bold text-[#252525] transition-all duration-300 ${
+                scrolled ? "mt-2 text-2xl md:text-3xl" : "mt-4 text-4xl md:text-6xl" }`} >
+                {gallery.title}
+              </h1>
+              {!scrolled && (
+                <p className="mx-auto mt-6 max-w-2xl leading-8 text-gray-600">
+                  {gallery.description}
+                </p>
+              )}
+            </div>
+          </section>
 
         {/* Gallery Grid */}
-        <section className="pb-24">
+        <section className="pt-10 pb-24">
           <div className="max-w-7xl mx-auto px-6">
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -99,7 +123,6 @@ export default function GalleryPage() {
                     fill
                     className="object-cover group-hover:scale-110 transition duration-500"
                   />
-
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300" />
                 </div>
               ))}

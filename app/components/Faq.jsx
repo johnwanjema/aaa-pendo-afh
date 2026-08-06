@@ -35,17 +35,7 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section
-      id="faq"
-     className="
-    relative
-    py-24
-    bg-gradient-to-b
-    from-gray-50
-    via-[#FCFAF4]
-    to-[#F5F1E8]
-  "
-    >
+    <section id="faq" className=" relative py-24 bg-gradient-to-b from-gray-50 via-[#FCFAF4] to-[#F5F1E8]">
       {/* Top divider */}
       {/* <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#C89B3C]/40 to-transparent" /> */}
 

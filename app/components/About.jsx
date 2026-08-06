@@ -3,7 +3,7 @@ import { HeartHandshake, House } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white overflow-hidden">
+    <section id="about" className="py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
 
@@ -23,7 +23,7 @@ export default function About() {
 
           <div className="rounded-[32px] overflow-hidden shadow-xl">
             <Image
-              src="/entry.jpeg"
+              src="/parking2.jpeg"
               alt="Pendo AFH"
               width={1400}
               height={850}
@@ -33,18 +33,7 @@ export default function About() {
 
           {/* Card 1 */}
 
-          <div
-            className="
-            absolute
-            -bottom-10
-            left-8
-            bg-white
-            rounded-3xl
-            shadow-xl
-            p-6
-            max-w-sm
-            "
-          >
+          <div className=" absolute -bottom-1 -left-8 bg-white rounded-3xl shadow-xl p-6 max-w-sm">
             <div className="w-14 h-14 rounded-full bg-[#F5F1E8] flex items-center justify-center">
               <HeartHandshake size={28} className="text-[#4F6F52]" />
             </div>
@@ -59,18 +48,7 @@ export default function About() {
 
           {/* Card 2 */}
 
-          <div
-            className="
-            absolute
-            top-12
-            -right-8
-            bg-white
-            rounded-3xl
-            shadow-xl
-            p-6
-            max-w-sm
-            "
-          >
+          <div className="absolute top-8 -right-8 bg-white rounded-3xl shadow-xl p-6 max-w-sm">
             <div className="w-14 h-14 rounded-full bg-[#F5F1E8] flex items-center justify-center">
               <House size={28} className="text-[#4F6F52]" />
             </div>

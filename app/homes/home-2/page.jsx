@@ -2,16 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import {
-  ArrowRight,
-  HeartHandshake,
-  ShieldCheck,
-  Utensils,
-  BedDouble,
-  Home,
-  Trees,
-  MapPin,
-} from "lucide-react";
+import { ArrowRight, HeartHandshake,  ShieldCheck, Utensils,  BedDouble,  Home,  Trees, MapPin,} from "lucide-react";
 
 export default function HomeTwo() {
   const highlights = [
@@ -73,7 +64,7 @@ export default function HomeTwo() {
         <section className="relative h-[70vh]">
 
           <Image
-            src="/home2.jpeg"
+            src="/overview2.1.jpeg"
             alt="Pendo AFH Home Two"
             fill
             priority
@@ -148,7 +139,7 @@ export default function HomeTwo() {
             <div className="relative h-[450px] overflow-hidden rounded-3xl shadow-lg">
 
               <Image
-                src="/home-2livingarea.jpeg"
+                src="/home2.jpeg"
                 alt="Home Two Living Room"
                 fill
                 className="object-cover"
@@ -181,7 +172,7 @@ export default function HomeTwo() {
                     <item.icon className="text-[#4F6F52]" />
                   </div>
 
-                  <h3 className="text-xl font-semibold">
+                  <h3 className="text-xl text-gray-800 font-semibold">
                     {item.title}
                   </h3>
 
