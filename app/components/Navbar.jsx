@@ -50,7 +50,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <div>
             <h1 className="text-2xl font-bold text-[#4F6F52]">
-              Pendo AFH
+              AAAPendo AFH
             </h1>
             <p className="text-xs text-gray-500">
               Compassionate Care Home

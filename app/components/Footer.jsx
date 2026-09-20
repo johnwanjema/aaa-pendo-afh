@@ -69,15 +69,25 @@ export default function Footer() {
 
             <div className="space-y-4 text-gray-300">
 
-              <div className="flex items-center gap-3">
-                <Phone size={18} className="text-[#C89B3C]"  />
-                <span>(206) 555-1234</span>
-              </div>
+             <div className="flex items-center gap-3">
+                    <Phone size={18} className="text-[#C89B3C]" />
+                    <a
+                      href={`tel:${siteConfig.provider.phone}`}
+                      className="hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full"
+                    >
+                      {siteConfig.provider.phone}
+                    </a>
+                  </div>
 
-              <div className="flex items-center gap-3">
-                <Mail size={18} className="text-[#C89B3C]" />
-                <span>info@pendoafh.com</span>
-              </div>
+                  <div className="flex items-center gap-3">
+                    <Mail size={18} className="text-[#C89B3C]" />
+                    <a
+                      href={`mailto:${siteConfig.provider.email}`}
+                      className="hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full"
+                    >
+                      {siteConfig.provider.email}
+                    </a>
+                </div>
 
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-[#C89B3C]" />
@@ -85,6 +95,7 @@ export default function Footer() {
                       href={`https://maps.google.com/?q=${encodeURIComponent(
                         siteConfig.afh.address1
                       )}`}
+                      className="hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -98,6 +109,7 @@ export default function Footer() {
                       href={`https://maps.google.com/?q=${encodeURIComponent(
                         siteConfig.afh.address2
                       )}`}
+                      className="hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

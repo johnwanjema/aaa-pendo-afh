@@ -1,17 +1,17 @@
 // data/config.js
 export const siteConfig = {
   afh: {
-    name: "Pendo AFH",
+    name: "AAAPendo AFH",
     tagline: "Providing compassionate, personalized care...",
-    logo: "/victory_afh.avif",
-    address1: "15517 se 175th ct  Renton Wa 98058",
-    address2: "16124 se 133rd pl Renton wa 98058",
+    // logo: "/victory_afh.avif",
+    address1: "32335 29th Avenue Sw, Federal Way, WA 98023, USA",
+    address2: "3232 Sw 326th St Federal Way, WA 98023, USA",
   },
   provider: {
-    owner: "Pendo",
+    owner: "Lucy Ngare",
     role: "Provider / Home Owner",
-    phone: "+1 453 753 1234",
-    email: "info@pendoafh.com",
+    phone: "+1 206 653 4698",
+    email: "pendoadultfamilyhome@gmail.com",
   },
   theme: {
     primary: "#4F6F52",
