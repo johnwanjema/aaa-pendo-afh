@@ -129,15 +129,15 @@ export default function Footer() {
 
             <div className="space-y-4">
                 <Link
-                href="/homes"
-                className="block rounded-xl bg-white/10 px-5 py-4 transition duration-300 hover:bg-[#C89B3C] hover:text-[#4F6F52]"
+                href="/homes/home-1"
+                className="block rounded-xl bg-[#4F6F52] px-5 py-4 font-medium text-white transition duration-300 hover:bg-[#3D5B43]"
                 >
                 AAAPendo AFH 1
                 </Link>
 
                 <Link
-                href="/homes"
-                className="block rounded-xl bg-white/10 px-5 py-4 transition duration-300 hover:bg-[#C89B3C] hover:text-[#4F6F52]"
+                href="/homes/home-2"
+                className="block rounded-xl bg-[#C89B3C] px-5 py-4 font-medium text-white transition duration-300 hover:bg-[#B3872E]"
                 >
                 AAAPendo AFH 2
                 </Link>
