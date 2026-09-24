@@ -12,14 +12,14 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-10 items-center relative z-10">
         {/* LEFT CONTENT */}
 
-        <div className=" lg:col-span-5">
+        <div className=" lg:col-span-6">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[3px] text-[#4F6F52]">
             Pendo Adult Family Home
           </p>
 
-          <h1 className="text-5xl font-bold leading-tight text-[#252525] lg:text-6xl">
-            Compassionate Care
-            <span className="block text-[#4F6F52]">Feels Like Home</span>
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-[#252525] sm:text-5xl xl:text-6xl">
+            <span className="block sm:whitespace-nowrap">Compassionate Care</span>
+            <span className="block text-[#4F6F52] sm:whitespace-nowrap">Feels Like Home</span>
           </h1>
 
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-gray-600">
@@ -59,7 +59,7 @@ export default function Hero() {
 
         {/* RIGHT IMAGE */}
 
-        <div className="lg:col-span-7 relative">
+        <div className="lg:col-span-6 relative">
           <div className="absolute -top-8 -right-8 w-full h-full border-2 border-[#C89B3C] rounded-[40px]" />
 
             <div className="relative rounded-[40px] overflow-hidden shadow-2xl">

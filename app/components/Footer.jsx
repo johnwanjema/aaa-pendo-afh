@@ -36,25 +36,25 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link href="#about" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#about" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   About
                 </Link>
               </li>
 
               <li>
-                <Link href="#services" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#services" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   Services
                 </Link>
               </li>
 
               <li>
-                <Link href="#gallery" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#gallery" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   Gallery
                 </Link>
               </li>
 
               <li>
-                <Link href="#contact" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#contact" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   Contact
                 </Link>
               </li>
@@ -80,7 +80,7 @@ export default function Footer() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <Mail size={18} className="text-[#C89B3C]" />
+                    <Mail size={18} className="shrink-0 text-[#C89B3C]" />
                     <a
                       href={`mailto:${siteConfig.provider.email}`}
                       className="hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full"
@@ -90,30 +90,31 @@ export default function Footer() {
                 </div>
 
               <div className="flex items-start gap-3">
-                <MapPin size={18} className="text-[#C89B3C]" />
+                <MapPin size={18} className="mt-1 shrink-0 text-[#C89B3C]" />
                  <a
                       href={`https://maps.google.com/?q=${encodeURIComponent(
                         siteConfig.afh.address1
                       )}`}
-                      className="hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full"
+                      className="hover:text-[#C89B3C]"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                     Pendo AFH 1
+                     <span className="block font-medium text-white">Pendo AFH 1</span>
+                     <span className="block text-sm">{siteConfig.afh.address1}</span>
                     </a>
               </div>
               <div className="flex items-start gap-3">
-                           <MapPin size={18} className="text-[#C89B3C]" />
-
+                <MapPin size={18} className="mt-1 shrink-0 text-[#C89B3C]" />
                  <a
                       href={`https://maps.google.com/?q=${encodeURIComponent(
                         siteConfig.afh.address2
                       )}`}
-                      className="hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full"
+                      className="hover:text-[#C89B3C]"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                     Pendo AFH 2
+                     <span className="block font-medium text-white">Pendo AFH 2</span>
+                     <span className="block text-sm">{siteConfig.afh.address2}</span>
                     </a>
               </div>
 
