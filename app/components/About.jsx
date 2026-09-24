@@ -27,13 +27,13 @@ export default function About() {
               alt="Pendo AFH"
               width={1400}
               height={850}
-              className="w-full h-[600px] object-cover"
+              className="w-full h-[320px] sm:h-[450px] lg:h-[600px] object-cover"
             />
           </div>
 
           {/* Card 1 */}
 
-          <div className=" absolute -bottom-1 -left-8 bg-white rounded-3xl shadow-xl p-6 max-w-sm">
+          <div className="mt-6 lg:mt-0 lg:absolute lg:-bottom-1 lg:-left-8 bg-white rounded-3xl shadow-xl p-6 lg:max-w-sm">
             <div className="w-14 h-14 rounded-full bg-[#F5F1E8] flex items-center justify-center">
               <HeartHandshake size={28} className="text-[#4F6F52]" />
             </div>
@@ -48,7 +48,7 @@ export default function About() {
 
           {/* Card 2 */}
 
-          <div className="absolute top-8 -right-8 bg-white rounded-3xl shadow-xl p-6 max-w-sm">
+          <div className="mt-6 lg:mt-0 lg:absolute lg:top-8 lg:-right-8 bg-white rounded-3xl shadow-xl p-6 lg:max-w-sm">
             <div className="w-14 h-14 rounded-full bg-[#F5F1E8] flex items-center justify-center">
               <House size={28} className="text-[#4F6F52]" />
             </div>

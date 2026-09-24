@@ -66,7 +66,7 @@ useEffect(() => {
         <div className="relative flex items-center">
           {/* Left Arrow */}
           <button onClick={() => emblaApi?.scrollPrev()}
-            className="absolute -left-8 z-20 hidden h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg transition hover:bg-[#4F6F52] hover:text-white md:flex">
+            className="absolute left-2 lg:-left-8 z-20 hidden h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg transition hover:bg-[#4F6F52] hover:text-white md:flex">
             <ChevronLeft size={22} />
           </button>
 
@@ -108,7 +108,7 @@ useEffect(() => {
 
           {/* Right Arrow */}
           <button onClick={() => emblaApi?.scrollNext()}
-            className="absolute -right-8 z-20 hidden h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg transition hover:bg-[#4F6F52] hover:text-white md:flex">
+            className="absolute right-2 lg:-right-8 z-20 hidden h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg transition hover:bg-[#4F6F52] hover:text-white md:flex">
             <ChevronRight size={22} />
           </button>
         </div>

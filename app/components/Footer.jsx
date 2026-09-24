@@ -28,33 +28,33 @@ export default function Footer() {
               Quick Links
             </h3>
 
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-1 text-gray-300">
               <li>
-                <Link href="/" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/" className="relative inline-block py-1.5 transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   Home
                 </Link>
               </li>
 
               <li>
-                <Link href="/#about" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#about" className="relative inline-block py-1.5 transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   About
                 </Link>
               </li>
 
               <li>
-                <Link href="/#services" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#services" className="relative inline-block py-1.5 transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   Services
                 </Link>
               </li>
 
               <li>
-                <Link href="/#gallery" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#gallery" className="relative inline-block py-1.5 transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   Gallery
                 </Link>
               </li>
 
               <li>
-                <Link href="/#contact" className="relative inline-block transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
+                <Link href="/#contact" className="relative inline-block py-1.5 transition duration-300 hover:text-[#C89B3C] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C89B3C] after:transition-all after:duration-300 hover:after:w-full">
                   Contact
                 </Link>
               </li>
@@ -158,7 +158,7 @@ export default function Footer() {
           <p className="mt-2 md:mt-0">
             Website by{' '}
             <span className="text-[#C89B3C] font-semibold hover:text-[#4F6F52] transition">
-              <a target="_blank" href="https://caredaraja.com">
+              <a target="_blank" rel="noopener noreferrer" href="https://caredaraja.com" className="inline-block py-2">
                 CareDaraja
               </a>
             </span>

@@ -61,11 +61,11 @@ export default function HomeOne() {
 
         {/* HERO */}
 
-        <section className="relative h-[70vh]">
+        <section className="relative flex min-h-[70vh] items-center pt-32 pb-16">
 
           <Image src="/home1.jpeg" alt="Pendo AFH Home One" fill priority className="object-cover"/>
           <div className="absolute inset-0 bg-black/45" />
-          <div className="relative z-10 flex h-full items-center">
+          <div className="relative z-10 w-full">
             <div className="mx-auto max-w-7xl px-6 text-white">
               <span className="rounded-full bg-[#C89B3C] px-5 py-2 font-medium text-black">
                 Pendo AFH

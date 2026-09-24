@@ -69,7 +69,8 @@ export default function Navbar() {
         {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
-          className="lg:hidden text-[#4F6F52]" >
+          aria-label={open ? "Close menu" : "Open menu"}
+          className="lg:hidden -mr-2 p-2 text-[#4F6F52]" >
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
 

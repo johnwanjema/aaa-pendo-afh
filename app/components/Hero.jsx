@@ -17,7 +17,7 @@ export default function Hero() {
             Pendo Adult Family Home
           </p>
 
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-[#252525] sm:text-5xl xl:text-6xl">
+          <h1 className="text-[2rem] font-bold leading-[1.1] tracking-tight text-[#252525] sm:text-5xl xl:text-6xl">
             <span className="block sm:whitespace-nowrap">Compassionate Care</span>
             <span className="block text-[#4F6F52] sm:whitespace-nowrap">Feels Like Home</span>
           </h1>
@@ -27,12 +27,12 @@ export default function Hero() {
           </p>
 
 
-            <div className="mt-8 flex gap-4">
-              <a href="#contact" className="rounded-full bg-[#C89B3C] px-7 py-3.5 font-semibold text-white transition hover:bg-[#A67C2E]">
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a href="#contact" className="whitespace-nowrap rounded-full bg-[#C89B3C] px-6 sm:px-7 py-3.5 font-semibold text-white transition hover:bg-[#A67C2E]">
                 Schedule a Tour
               </a>
 
-              <a href="#about" className="rounded-full border border-[#4F6F52] px-7 py-3.5 font-semibold text-[#4F6F52] transition hover:bg-[#4F6F52] hover:text-white">
+              <a href="#about" className="whitespace-nowrap rounded-full border border-[#4F6F52] px-6 sm:px-7 py-3.5 font-semibold text-[#4F6F52] transition hover:bg-[#4F6F52] hover:text-white">
                 Learn More
               </a>
             </div>
@@ -60,7 +60,7 @@ export default function Hero() {
         {/* RIGHT IMAGE */}
 
         <div className="lg:col-span-6 relative">
-          <div className="absolute -top-8 -right-8 w-full h-full border-2 border-[#C89B3C] rounded-[40px]" />
+          <div className="absolute -top-4 -right-4 lg:-top-8 lg:-right-8 w-full h-full border-2 border-[#C89B3C] rounded-[40px]" />
 
             <div className="relative rounded-[40px] overflow-hidden shadow-2xl">
               <Image
@@ -75,7 +75,7 @@ export default function Hero() {
 
           {/* Floating badge */}
 
-            <div className="absolute bottom-8 -left-8 bg-white rounded-2xl shadow-xl px-6 py-5">
+            <div className="absolute bottom-6 left-4 lg:bottom-8 lg:-left-8 bg-white rounded-2xl shadow-xl px-6 py-5">
               <p className="text-sm text-gray-500">A place filled with</p>
 
               <p className="font-bold text-[#4F6F52]">

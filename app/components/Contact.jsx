@@ -140,8 +140,8 @@ export default function Contact() {
         </div>
 
         {/* RIGHT SIDE - FORM */}
-        <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-          <form onSubmit={handleSubmit} className="space-y-6 bg-white p-3 ">
+        <div className="bg-white p-5 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+          <form onSubmit={handleSubmit} className="space-y-6 bg-white sm:p-3">
             <div className="grid md:grid-cols-2 gap-6">
               <input suppressHydrationWarning type="text" name="firstName" placeholder="First Name *" value={formData.firstName} onChange={handleChange} required className="input" />
 

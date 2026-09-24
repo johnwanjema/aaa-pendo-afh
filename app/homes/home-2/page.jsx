@@ -61,7 +61,7 @@ export default function HomeTwo() {
 
         {/* HERO */}
 
-        <section className="relative h-[70vh]">
+        <section className="relative flex min-h-[70vh] items-center pt-32 pb-16">
 
           <Image
             src="/overview2.1.jpeg"
@@ -73,7 +73,7 @@ export default function HomeTwo() {
 
           <div className="absolute inset-0 bg-black/45" />
 
-          <div className="relative z-10 flex h-full items-center">
+          <div className="relative z-10 w-full">
 
             <div className="mx-auto max-w-7xl px-6 text-white">
 
