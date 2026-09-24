@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,8 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/icon.svg" alt="" width={44} height={44} unoptimized priority className="h-10 w-10 shrink-0 sm:h-11 sm:w-11" />
           <div>
             <p className="text-2xl font-bold text-[#4F6F52]">
               AAAPendo AFH
