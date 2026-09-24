@@ -31,7 +31,7 @@ useEffect(() => {
 
   const galleries = {
     "1": {
-      title: "Pendo AFH - Home One",
+      title: "AAAPendo AFH - Home One",
       description:
         "Take a closer look at our warm and welcoming Home One.",
       images: [
@@ -58,7 +58,7 @@ useEffect(() => {
     },
 
     "2": {
-      title: "Pendo AFH - Home Two",
+      title: "AAAPendo AFH - Home Two",
       description:
         "Explore the comfortable spaces and caring environment of Home Two.",
       images: [

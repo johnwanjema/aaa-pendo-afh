@@ -4,14 +4,14 @@ import { ArrowRight } from "lucide-react";
 
 const homes = [
   {
-    title: "Pendo AFH - Home One",
+    title: "AAAPendo AFH - Home One",
     description:
       "A warm and welcoming home offering personalized care in a peaceful environment.",
     image: "/home1.jpeg",
     href: "/gallery?home=1",
   },
   {
-    title: "Pendo AFH - Home Two",
+    title: "AAAPendo AFH - Home Two",
     description:
       "Comfortable living spaces designed to promote independence, dignity, and connection.",
     image: "/home2.jpeg",
@@ -37,7 +37,7 @@ export default function OurHomes() {
           </h2>
 
           <p className="mt-5 text-gray-600 leading-7">
-            Each Pendo AFH home offers a warm, comfortable setting with the same
+            Each AAAPendo AFH home offers a warm, comfortable setting with the same
             commitment to personalized care and resident well-being.
           </p>
         </div>

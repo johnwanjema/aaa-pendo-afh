@@ -4,10 +4,18 @@ import Navbar from "../components/Navbar";
 
 import { ArrowRight, Home, Trees, BedDouble } from "lucide-react";
 import Footer from "../components/Footer";
+import { pageMetadata } from "../lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Our Homes",
+  description:
+    "Explore AAAPendo AFH's two adult family homes in Federal Way, WA. Compare bedrooms, living spaces, and amenities, and schedule a tour.",
+  path: "/homes",
+});
 
 const homes = [
   {
-    title: "Pendo AFH - Home One",
+    title: "AAAPendo AFH - Home One",
     image: "/home1.jpeg",
     description:
       "A warm and welcoming home offering personalized care in a peaceful residential setting.",
@@ -19,7 +27,7 @@ const homes = [
     homeId: 1,
   },
   {
-    title: "Pendo AFH - Home Two",
+    title: "AAAPendo AFH - Home Two",
     image: "/home2.jpeg",
     description:
       "A comfortable home focused on safety, dignity, and compassionate daily support.",
@@ -53,7 +61,7 @@ export default function HomesPage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl leading-8 text-gray-600">
-            Every Pendo AFH home provides compassionate care in a warm, welcoming
+            Every AAAPendo AFH home provides compassionate care in a warm, welcoming
             environment. Explore each location to discover the spaces, amenities,
             and atmosphere that make our homes special.
           </p>

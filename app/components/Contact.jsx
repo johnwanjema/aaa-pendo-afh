@@ -122,7 +122,7 @@ export default function Contact() {
       rel="noopener noreferrer"
       className="rounded-xl bg-[#4F6F52] px-7 py-3.5 font-medium text-white transition hover:bg-[#3D5B43]"
     >
-     Pendo AFH 1
+     AAAPendo AFH 1
     </a>
 
     <a
@@ -133,7 +133,7 @@ export default function Contact() {
       rel="noopener noreferrer"
       className="rounded-xl bg-[#C89B3C] px-7 py-3.5 font-medium text-white transition hover:bg-[#B3872E]"
     >
-     Pendo AFH 2
+     AAAPendo AFH 2
     </a>
   </div>
 </section>
@@ -162,8 +162,8 @@ export default function Contact() {
                 className="input w-full"
               >
                 <option value="">Select a Home</option>
-                <option value="Pendo AFH 1">Pendo AFH 1</option>
-                <option value="Pendo AFH 2">Pendo AFH 2</option>
+                <option value="AAAPendo AFH 1">AAAPendo AFH 1</option>
+                <option value="AAAPendo AFH 2">AAAPendo AFH 2</option>
                 <option value="Not Sure Yet">Not Sure Yet</option>
               </select>
             <textarea suppressHydrationWarning name="message" placeholder="How can we help you or your loved one?" rows="3" value={formData.message} onChange={handleChange} required className="input" />

@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Logo */}
           <div>
             <h2 className="text-3xl font-bold">
-              Pendo AFH
+              AAAPendo AFH
             </h2>
 
             <p className="mt-5 text-gray-300 leading-7">
@@ -99,7 +99,7 @@ export default function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                     <span className="block font-medium text-white">Pendo AFH 1</span>
+                     <span className="block font-medium text-white">AAAPendo AFH 1</span>
                      <span className="block text-sm">{siteConfig.afh.address1}</span>
                     </a>
               </div>
@@ -113,7 +113,7 @@ export default function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                     <span className="block font-medium text-white">Pendo AFH 2</span>
+                     <span className="block font-medium text-white">AAAPendo AFH 2</span>
                      <span className="block text-sm">{siteConfig.afh.address2}</span>
                     </a>
               </div>
@@ -132,14 +132,14 @@ export default function Footer() {
                 href="/homes"
                 className="block rounded-xl bg-white/10 px-5 py-4 transition duration-300 hover:bg-[#C89B3C] hover:text-[#4F6F52]"
                 >
-                Pendo AFH 1
+                AAAPendo AFH 1
                 </Link>
 
                 <Link
                 href="/homes"
                 className="block rounded-xl bg-white/10 px-5 py-4 transition duration-300 hover:bg-[#C89B3C] hover:text-[#4F6F52]"
                 >
-                Pendo AFH 2
+                AAAPendo AFH 2
                 </Link>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Pendo AFH. All rights reserved.
+              © {new Date().getFullYear()} AAAPendo AFH. All rights reserved.
             </p>
 
             

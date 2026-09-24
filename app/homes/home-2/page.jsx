@@ -2,6 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import { pageMetadata } from "../../lib/seo";
+
+export const metadata = pageMetadata({
+  title: "AAAPendo Home Two",
+  description:
+    "AAAPendo AFH Home Two at 3232 SW 326th St, Federal Way, WA: a comfortable adult family home with compassionate care, companionship, and home-cooked meals.",
+  path: "/homes/home-2",
+});
 import { ArrowRight, HeartHandshake,  ShieldCheck, Utensils,  BedDouble,  Home,  Trees, MapPin,} from "lucide-react";
 
 export default function HomeTwo() {
@@ -65,7 +73,7 @@ export default function HomeTwo() {
 
           <Image
             src="/overview2.1.jpeg"
-            alt="Pendo AFH Home Two"
+            alt="AAAPendo AFH Home Two"
             fill
             priority
             className="object-cover"
@@ -78,7 +86,7 @@ export default function HomeTwo() {
             <div className="mx-auto max-w-7xl px-6 text-white">
 
               <span className="rounded-full bg-[#C89B3C] px-5 py-2 font-medium text-black">
-                Pendo AFH
+                AAAPendo AFH
               </span>
 
               <h1 className="mt-6 text-5xl font-bold md:text-7xl">
@@ -122,7 +130,7 @@ export default function HomeTwo() {
               </h2>
 
               <p className="mt-6 leading-8 text-gray-600">
-                Pendo AFH Home Two offers personalized care in a peaceful,
+                AAAPendo AFH Home Two offers personalized care in a peaceful,
                 welcoming environment where every resident is treated like
                 family. We focus on promoting dignity, independence, and
                 quality of life through compassionate support.

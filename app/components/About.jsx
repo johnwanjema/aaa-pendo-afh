@@ -9,7 +9,7 @@ export default function About() {
 
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="uppercase tracking-[3px] text-[#4F6F52] font-semibold">
-            About Pendo AFH
+            About AAAPendo AFH
           </p>
 
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-[#252525]">
@@ -24,7 +24,7 @@ export default function About() {
           <div className="rounded-[32px] overflow-hidden shadow-xl">
             <Image
               src="/parking2.jpeg"
-              alt="Pendo AFH"
+              alt="AAAPendo AFH"
               width={1400}
               height={850}
               className="w-full h-[320px] sm:h-[450px] lg:h-[600px] object-cover"
@@ -66,7 +66,7 @@ export default function About() {
 
         <div className="max-w-3xl mx-auto text-center mt-24">
           <p className="text-lg leading-8 text-gray-600">
-            At Pendo Adult Family Home, we believe quality care begins with
+            At AAAPendo Adult Family Home, we believe quality care begins with
             genuine relationships. Our goal is to provide a safe, respectful,
             and comfortable home where every resident is treated with dignity,
             compassion, and kindness every day.

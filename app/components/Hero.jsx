@@ -14,7 +14,7 @@ export default function Hero() {
 
         <div className=" lg:col-span-6">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[3px] text-[#4F6F52]">
-            Pendo Adult Family Home
+            AAAPendo Adult Family Home
           </p>
 
           <h1 className="text-[2rem] font-bold leading-[1.1] tracking-tight text-[#252525] sm:text-5xl xl:text-6xl">
@@ -65,7 +65,7 @@ export default function Hero() {
             <div className="relative rounded-[40px] overflow-hidden shadow-2xl">
               <Image
                 src="/entry.jpeg"
-                alt="Pendo AFH"
+                alt="AAAPendo AFH"
                 width={900}
                 height={900}
                 className="w-full h-[650px] object-cover"

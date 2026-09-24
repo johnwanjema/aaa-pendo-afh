@@ -2,6 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import { pageMetadata } from "../../lib/seo";
+
+export const metadata = pageMetadata({
+  title: "AAAPendo Home One",
+  description:
+    "AAAPendo AFH Home One at 32335 29th Ave SW, Federal Way, WA: private and shared bedrooms, a spacious living room, outdoor space, and 24-hour personalized care.",
+  path: "/homes/home-1",
+});
 import {  ArrowRight,  HeartHandshake, ShieldCheck,  Utensils,  BedDouble, Trees, Home,  MapPin,} from "lucide-react";
 
 export default function HomeOne() {
@@ -63,12 +71,12 @@ export default function HomeOne() {
 
         <section className="relative flex min-h-[70vh] items-center pt-32 pb-16">
 
-          <Image src="/home1.jpeg" alt="Pendo AFH Home One" fill priority className="object-cover"/>
+          <Image src="/home1.jpeg" alt="AAAPendo AFH Home One" fill priority className="object-cover"/>
           <div className="absolute inset-0 bg-black/45" />
           <div className="relative z-10 w-full">
             <div className="mx-auto max-w-7xl px-6 text-white">
               <span className="rounded-full bg-[#C89B3C] px-5 py-2 font-medium text-black">
-                Pendo AFH
+                AAAPendo AFH
               </span>
               <h1 className="mt-6 text-5xl font-bold md:text-7xl">
                 Home One
@@ -99,7 +107,7 @@ export default function HomeOne() {
                 Personalized Care in a Family Setting
               </h2>
               <p className="mt-6 leading-8 text-gray-600">
-                Pendo AFH Home One is thoughtfully designed to provide seniors
+                AAAPendo AFH Home One is thoughtfully designed to provide seniors
                 with the comfort of home while receiving the support they need.
                 Our experienced caregivers focus on building meaningful
                 relationships, promoting independence, and ensuring every

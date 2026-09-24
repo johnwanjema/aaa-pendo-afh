@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "What services does Pendo AFH provide?",
+    question: "What services does AAAPendo AFH provide?",
     answer:
       "We provide personalized adult family home care including assistance with daily living activities, medication support, nutritious meals, companionship, and 24-hour supervision in a safe home environment.",
   },
@@ -25,7 +25,7 @@ const faqs = [
       "Simply complete the contact form on this website or call us directly. We'd be happy to arrange a personal tour of either of our homes.",
   },
   {
-    question: "What makes Pendo AFH different?",
+    question: "What makes AAAPendo AFH different?",
     answer:
       "We focus on compassionate, individualized care in a warm, family-like setting where every resident is treated with dignity, respect, and kindness.",
   },
