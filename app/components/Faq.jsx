@@ -68,6 +68,7 @@ export default function FAQ() {
               }`}
             >
               <button
+                suppressHydrationWarning
                 onClick={() => setOpen(open === index ? -1 : index)}
                 className="flex w-full items-center justify-between px-7 py-6 text-left"
               >
