@@ -143,19 +143,20 @@ export default function Contact() {
         <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
           <form onSubmit={handleSubmit} className="space-y-6 bg-white p-3 ">
             <div className="grid md:grid-cols-2 gap-6">
-              <input type="text" name="firstName" placeholder="First Name *" value={formData.firstName} onChange={handleChange} required className="input" />
+              <input suppressHydrationWarning type="text" name="firstName" placeholder="First Name *" value={formData.firstName} onChange={handleChange} required className="input" />
 
-              <input type="text" name="lastName" placeholder="Last Name *" value={formData.lastName} onChange={handleChange} className="input" />
+              <input suppressHydrationWarning type="text" name="lastName" placeholder="Last Name *" value={formData.lastName} onChange={handleChange} className="input" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <input type="tel" name="phone" placeholder="Phone Number *" value={formData.phone} onChange={handleChange} className="input" />
+              <input suppressHydrationWarning type="tel" name="phone" placeholder="Phone Number *" value={formData.phone} onChange={handleChange} className="input" />
 
-              <input type="email" name="email" placeholder="Email Address *" value={formData.email} onChange={handleChange} required className="input" />
+              <input suppressHydrationWarning type="email" name="email" placeholder="Email Address *" value={formData.email} onChange={handleChange} required className="input" />
             </div>
            
               <select
                 name="home"
+                suppressHydrationWarning
                 value={formData.home}
                 onChange={handleChange}
                 className="input w-full"
@@ -165,10 +166,10 @@ export default function Contact() {
                 <option value="Pendo AFH 2">Pendo AFH 2</option>
                 <option value="Not Sure Yet">Not Sure Yet</option>
               </select>
-            <textarea name="message" placeholder="How can we help you or your loved one?" rows="3" value={formData.message} onChange={handleChange} required className="input" />
+            <textarea suppressHydrationWarning name="message" placeholder="How can we help you or your loved one?" rows="3" value={formData.message} onChange={handleChange} required className="input" />
 
             {success && <div className="bg-green-100 border border-green-300 text-green-800 px-4 py-3 rounded-md text-sm">Request sent successfully. We will contact you soon.</div>}
-            <button type="submit" disabled={loading}className="w-full rounded-xl bg-[#4F6F52] py-3.5 font-semibold text-white transition hover:bg-[#3D5B43] disabled:cursor-not-allowed disabled:opacity-60"
+            <button type="submit" disabled={loading} suppressHydrationWarning className="w-full rounded-xl bg-[#4F6F52] py-3.5 font-semibold text-white transition hover:bg-[#3D5B43] disabled:cursor-not-allowed disabled:opacity-60"
                   >
               {loading ? 'Sending...' : 'Request Information'}
             </button>
