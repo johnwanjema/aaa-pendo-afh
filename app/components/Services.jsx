@@ -56,8 +56,8 @@ export default function Services() {
       {/* <div
   className="absolute inset-0 bg-cover bg-center"
   style={{ backgroundImage: "url('/lobby.jpeg')" }}
-// /> */}
-// <div className="absolute inset-0 bg-black/10" />
+/>
+<div className="absolute inset-0 bg-black/10" /> */}
 
       <div className="max-w-6xl mx-auto px-6">
       {/* <div className="relative z-10 max-w-6xl mx-auto px-6"> */}
