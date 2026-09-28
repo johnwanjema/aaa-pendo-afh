@@ -8,6 +8,7 @@ export default function sitemap() {
     { path: "/homes/home-2", priority: 0.8 },
     { path: "/homes/gallery?home=1", priority: 0.6 },
     { path: "/homes/gallery?home=2", priority: 0.6 },
+    { path: "/privacy", priority: 0.3 },
   ];
 
   return routes.map(({ path, priority }) => ({

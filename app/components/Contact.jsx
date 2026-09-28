@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { siteConfig } from '../lib/config';
 import { Phone, Mail } from 'lucide-react';
 
@@ -173,6 +174,14 @@ export default function Contact() {
                   >
               {loading ? 'Sending...' : 'Request Information'}
             </button>
+
+            <p className="text-center text-xs leading-5 text-gray-500">
+              By submitting this form, you agree to our{' '}
+              <Link href="/privacy" className="font-medium text-[#4F6F52] underline hover:text-[#3D5B43]">
+                Privacy Policy
+              </Link>
+              . Please don&apos;t include detailed medical information.
+            </p>
           </form>
         </div>
       </div>

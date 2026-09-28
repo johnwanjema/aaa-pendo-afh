@@ -152,6 +152,10 @@ export default function Footer() {
 
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} AAAPendo AFH. All rights reserved.
+              <span className="mx-2">·</span>
+              <Link href="/privacy" className="hover:text-[#C89B3C]">
+                Privacy Policy
+              </Link>
             </p>
 
             
